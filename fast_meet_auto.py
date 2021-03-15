@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import pafy
+import vlc
+from time import sleep
+import random
+
 import pyttsx3
 import sys
 from selenium import webdriver
@@ -10,7 +15,6 @@ from selenium.webdriver.common.keys import Keys
 import speech_recognition as sr
 import os
 
-
 import os 
 sys.path.append(os.path.abspath(os.path.join('..', 'dir')))
 from dir.user_details import *
@@ -18,6 +22,9 @@ from dir.user_details import *
 import time
 import win32com.client
 
+engine = pyttsx3.init()
+engine.setProperty('rate', 150)
+r = sr.Recognizer()
 
 def connect_to_meet():
     driver = webdriver.Chrome("./chromedriver.exe")
@@ -40,15 +47,51 @@ def connect_to_meet():
     shell.Sendkeys("{LEFT}")
     time.sleep(2)
     shell.Sendkeys("{ENTER}")
+    engine.say("We are now connected and still have time,what do you want to do?")
+    print("We are now connected and still have time,what do you want to do?")
+    engine.runAndWait()
+    with sr.Microphone() as source:
+        print("Speak into the microphone")
+        audio = r.listen(source)
+        rec=r.recognize_google(audio)
+        print("You said "+rec)
+        if(rec=='play some music'):
 
-engine = pyttsx3.init()
-engine.setProperty('rate', 150)
+            engine.say("Choosing a random melody to hear..")
+            print("Choosing a random melody to hear..")
+            engine.runAndWait()
+
+            urls = [
+            "https://www.youtube.com/watch?v=YL6gjL3w1vM&list=PLxGoKot5tMj1odQCmoHzCN1_xka8aWqQe",
+            "https://www.youtube.com/watch?v=XkAtVnS9-FA&list=PLxGoKot5tMj1odQCmoHzCN1_xka8aWqQe&index=2",
+            "https://www.youtube.com/watch?v=Yykd5087Vzc&list=PLxGoKot5tMj1odQCmoHzCN1_xka8aWqQe&index=3",
+            "https://www.youtube.com/watch?v=jHEJvdqR3RU&list=PLxGoKot5tMj1odQCmoHzCN1_xka8aWqQe&index=5",
+            "https://www.youtube.com/watch?v=fdTA2lL-27s&list=PLxGoKot5tMj1odQCmoHzCN1_xka8aWqQe&index=6"]
+
+            url=random.choice(urls)
+            video = pafy.new(url)
+            best = video.getbest()
+            playurl = best.url
+
+            Instance = vlc.Instance()
+            player = Instance.media_player_new()
+            Media = Instance.media_new(playurl)
+            Media.get_mrl()
+            player.set_media(Media)
+            player.play()
+
+            sleep(60)
+
+        else:
+            pass
+
+
 x='You\'ve got ten minutes for the meeting to start. Do you want to connect? Say YES or NO'
 engine.say(x)
 print(x)
 engine.runAndWait()
 
-r = sr.Recognizer()
+
 with sr.Microphone() as source:
 	print("Speak into the microphone")
 	audio = r.listen(source)
