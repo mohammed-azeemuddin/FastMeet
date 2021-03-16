@@ -15,7 +15,6 @@ from selenium.webdriver.common.keys import Keys
 import speech_recognition as sr
 import os
 
-import os 
 sys.path.append(os.path.abspath(os.path.join('..', 'dir')))
 from dir.user_details import *
 
@@ -47,18 +46,39 @@ def connect_to_meet():
     shell.Sendkeys("{LEFT}")
     time.sleep(2)
     shell.Sendkeys("{ENTER}")
-    engine.say("We are now connected and still have time,what do you want to do?")
-    print("We are now connected and still have time,what do you want to do?")
+    time.sleep(6)
+    shell.Sendkeys("{TAB}")
+    time.sleep(2)
+    shell.Sendkeys("{TAB}")
+    time.sleep(2)
+    shell.Sendkeys("{TAB}")
+    time.sleep(2)
+    shell.Sendkeys("{TAB}")
+    time.sleep(2)
+    shell.Sendkeys("{TAB}")
+    time.sleep(2)
+    shell.Sendkeys("{TAB}")
+    time.sleep(2)
+    shell.Sendkeys("{TAB}")
+    time.sleep(2)
+    shell.Sendkeys("{TAB}")
+    time.sleep(2)
+    shell.Sendkeys("{ENTER}")
+    time.sleep(10)
+    
+    engine.say("We are now connected and still have time,do you want to hear some music?")
+    print("We are now connected and still have time,do you want to hear some music?")
     engine.runAndWait()
+
     with sr.Microphone() as source:
         print("Speak into the microphone")
         audio = r.listen(source)
         rec=r.recognize_google(audio)
         print("You said "+rec)
-        if(rec=='play some music'):
+        if(rec=='yes'):
 
-            engine.say("Choosing a random melody to hear..")
-            print("Choosing a random melody to hear..")
+            engine.say("Choosing a random melody from youtube to hear..")
+            print("Choosing a random melody from youtube to hear..")
             engine.runAndWait()
 
             urls = [
@@ -83,33 +103,38 @@ def connect_to_meet():
             sleep(60)
 
         else:
-            pass
+            y="Okay fine! I will be on my way"
+            engine.say(y)
+            print(y)
+            engine.runAndWait()
+            sys.exit(0)
+            
 
 
-x='You\'ve got ten minutes for the meeting to start. Do you want to connect? Say YES or NO'
+x='Good Morning Azeem ! It\'s time for the meeting. Let\'s connect. Connecting to the meeting .. please wait...'
 engine.say(x)
 print(x)
 engine.runAndWait()
 
 
-with sr.Microphone() as source:
-	print("Speak into the microphone")
-	audio = r.listen(source)
-rec=r.recognize_google(audio)
-print("You said "+rec)
-if(rec=='yes'):
-    try:
-    	connect_to_meet()
-    except:
-    	engine.say("some error occured")
-    	engine.runAndWait()
-    	sys.exit(0)
-else:
-	n="Okay fine! I will be on my way"
-	engine.say(n)
-	print(n)
+# with sr.Microphone() as source:
+# 	print("Speak into the microphone")
+# 	audio = r.listen(source)
+# rec=r.recognize_google(audio)
+# print("You said "+rec)
+# if(rec=='yes'):
+try:
+	connect_to_meet()
+except:
+	engine.say("some error occured")
 	engine.runAndWait()
 	sys.exit(0)
+# else:
+# 	n="Okay fine! I will be on my way"
+# 	engine.say(n)
+# 	print(n)
+# 	engine.runAndWait()
+# 	sys.exit(0)
 
 
 # c=input().lower()
