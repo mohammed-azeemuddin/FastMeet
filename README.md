@@ -18,12 +18,12 @@ There are two scripts I wrote for this project
 Both the scripts have one thing in common , they enter all the necessary details required to connect to the meeting without you having to do anything.
 
 Python Libraries used : 
--> Selenium (for automation in web browser) 
--> win32com (for simulating key presses)
--> pyttsx3 (Python text to speech library)
--> pyaudio (for working with audio and voice)
--> SpeechRecognition (for identifying speech)
--> Windows Task Scheduler (for running the script on a specified time daily/weekly etc.)
+1) Selenium (for automation in web browser) 
+2) win32com (for simulating key presses)
+3) pyttsx3 (Python text to speech library)
+4) pyaudio (for working with audio and voice)
+5) SpeechRecognition (for identifying speech)
+Also , Windows Task Scheduler (for running the script on a specified time daily/weekly etc.)
 
 
 The video demo : https://www.youtube.com/watch?v=_WiJtKpCjKE
