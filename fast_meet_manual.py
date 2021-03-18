@@ -7,11 +7,14 @@ from getpass import getpass
 from selenium.webdriver.common.keys import Keys
 
 import sys, os
-sys.path.append(os.path.abspath(os.path.join('..', 'dir')))
-from dir.user_details import *
+sys.path.append(os.path.abspath(os.path.join('..', 'dir1')))
+from dir1.user_details import *
 
 import time
 import win32com.client
+
+engine = pyttsx3.init()
+engine.setProperty('rate', 150)
 
 def connect_using_webex():
     driver = webdriver.Chrome("./chromedriver.exe")
@@ -53,6 +56,9 @@ def connect_using_webex():
     time.sleep(2)
     shell.Sendkeys("{ENTER}")
     time.sleep(10)
+    engine.say("You are now connected to the meeting")
+    print("You are now connected to the meeting")
+    engine.runAndWait()
     driver.quit()
 
 def connect_using_chrome():
@@ -97,8 +103,7 @@ def connect_using_chrome():
     time.sleep(1)
     driver.find_element_by_id('interstitial_join_btn').click()
 
-engine = pyttsx3.init()
-engine.setProperty('rate', 150)
+
 x='Do you want to connect through Webex application or Google Chrome'
 engine.say(x)
 print(x)
@@ -107,7 +112,7 @@ engine.runAndWait()
 my_choice=input()
 
 try:
-	if(my_choice=='a'):
+	if(my_choice.lower()=='a'):
 		connect_using_webex()
 	else:
 		connect_using_chrome()

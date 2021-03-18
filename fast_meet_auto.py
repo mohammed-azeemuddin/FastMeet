@@ -15,8 +15,8 @@ from selenium.webdriver.common.keys import Keys
 import speech_recognition as sr
 import os
 
-sys.path.append(os.path.abspath(os.path.join('..', 'dir')))
-from dir.user_details import *
+sys.path.append(os.path.abspath(os.path.join('..', 'dir1')))
+from dir1.user_details import *
 
 import time
 import win32com.client
@@ -24,6 +24,7 @@ import win32com.client
 engine = pyttsx3.init()
 engine.setProperty('rate', 150)
 r = sr.Recognizer()
+
 
 def connect_to_meet():
     driver = webdriver.Chrome("./chromedriver.exe")
@@ -64,18 +65,20 @@ def connect_to_meet():
     shell.Sendkeys("{TAB}")
     time.sleep(2)
     shell.Sendkeys("{ENTER}")
-    time.sleep(10)
+    time.sleep(6)
     
-    engine.say("We are now connected and still have time,do you want to hear some music?")
-    print("We are now connected and still have time,do you want to hear some music?")
+    engine.say("We are now connected and still have time,what do you want me to do?")
+    print("We are now connected and still have time,what do you want me to do?")
     engine.runAndWait()
 
     with sr.Microphone() as source:
+        print("please wait...")
+        r.adjust_for_ambient_noise(source, duration = 5)
         print("Speak into the microphone")
         audio = r.listen(source)
         rec=r.recognize_google(audio)
         print("You said "+rec)
-        if(rec=='yes'):
+        if(rec=='play some music'):
 
             engine.say("Choosing a random melody from youtube to hear..")
             print("Choosing a random melody from youtube to hear..")
