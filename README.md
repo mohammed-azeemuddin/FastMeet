@@ -37,3 +37,20 @@ Go to cmd and type
 
 You will see something similar to this picture
 
+![p1](https://user-images.githubusercontent.com/48662097/111827132-8c856800-890f-11eb-8fcd-4f2745d7eaf6.jpg)
+
+*Now exit form the command prompt or close python shell*
+
+**If your version is 64 bit**
+*Open cmd and type in the below command from the same directory*
+
+`pip install PyAudio-0.2.11-cp38-cp38-win_amd64.whl`
+
+**If your version is 32 bit**
+*Open cmd and type in the below command from the same directory*
+
+`pip install PyAudio-0.2.11-cp39-cp39-win32.whl`
+
+### Enter your details
+
+
