@@ -23,7 +23,7 @@ Python Libraries used :
 
 The video demo : https://www.youtube.com/watch?v=_WiJtKpCjKE
 
-##Steps for installation
+## Steps for installation
 **Python version - 3.8.5 used**
 
 Use cmd prompt and enter the given code below for installing all the required libararies. Make sure you are working in project directory itself.
@@ -34,3 +34,6 @@ Check if your python version is 32 bit or 64 bit version
 Go to cmd and type
 
 `python`
+
+You will see something similar to this picture
+
