@@ -1,6 +1,0 @@
-python_vlc==3.0.11115
-selenium==3.141.0
-pywin32==228
-pyttsx3==2.90
-SpeechRecognition==3.8.1
-pafy==0.5.5
