@@ -71,7 +71,8 @@ email_id *(your email id in the meeting)*
 
 ## Testing your program 
 
-Voila! We're done!
+We're halfway there!
+
 Run `fast_meet_auto.py` and `fast_meet_manual.py` to test the scripts. 
 
 
