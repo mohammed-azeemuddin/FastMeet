@@ -2,27 +2,26 @@
 
 ## Introduction
 
-This script is used for connecting to meeting on time and entering the details of the meeting such as MeetingID,password,username and other credentials automatically.
+**This script is used for connecting to meeting on time and entering the details of the meeting such as MeetingID,password,username and other credentials automatically.** 🤩 😏
 
-This script also helps one to automatically connect to a meeting without them needing to remember about it once scheduled. (NO REMINDERS NEEDED) 🤠✌️
+> This script also helps one to automatically connect to a meeting without them needing to remember about it once scheduled. (NO REMINDERS NEEDED) 🤠✌️
 
-I've scheduled the program to run everyday 15 min before my meeting starts (using Windows Task Scheduler). Its built in the form of a simple chatbot (no ML/DL used). ✨ It also prompts if you want to hear any music as we've joined the meeting earlier than expected. 🎶
+> I've scheduled the program to run everyday 15 min before my meeting starts (using Windows Task Scheduler). Its built in the form of a simple chatbot (no ML/DL used). ✨ It also prompts if you want to hear any music as we've joined the meeting earlier than expected. 🎶
 
-A simple chatbot that informs you that it's meeting time and connects you to the meeting without you even touching a key or clicking anything. It also prompts if you want to hear any music as we've joined the meeting earlier and the meeting hasn't started yet.
+> A simple chatbot that informs you that it's meeting time and connects you to the meeting without you even touching a key or clicking anything. It also prompts if you want to hear any music as we've joined the meeting earlier and the meeting hasn't started yet.
 
-There are two scripts in this project
+> There are two scripts in this project
 
-Automated script : Connects you to the meeting on specified time everyday
+*Automated script : Connects you to the meeting on specified time everyday
 Instant connect script: Connects you when you run the program (doesn't run automatically as the scheduled script)
-Both the scripts have one thing in common , they enter all the necessary details required to connect to the meeting without you having to do anything.
+Both the scripts have one thing in common , they enter all the necessary details required to connect to the meeting without you having to do anything.*
 
-Python Libraries used :
-
-1. Selenium (for automation in web browser)
+## Python Libraries used :
+*1. Selenium (for automation in web browser)
 2. win32com (for simulating key presses)
 3. pyttsx3 (Python text to speech library)
 4. pyaudio (for working with audio and voice)
-5. SpeechRecognition (for identifying speech) Also , Windows Task Scheduler (for running the script on a specified time daily/weekly etc.)
+5. SpeechRecognition (for identifying speech) Also , Windows Task Scheduler (for running the script on a specified time daily/weekly etc.)*
 
 The video demo : https://www.youtube.com/watch?v=_WiJtKpCjKE
 
@@ -87,23 +86,23 @@ You will be able to see something like this.
 ![image](https://user-images.githubusercontent.com/48662097/111857361-f6753000-8956-11eb-9ba7-249256118058.png)
 
 
-1) Go to the Actions (on the right) and click Create Task
+1. Go to the Actions (on the right) and click Create Task
 
 ![image](https://user-images.githubusercontent.com/48662097/111857421-57046d00-8957-11eb-97f4-ec167c7ef796.png)
 
-2) In Create task enter the details as given below in the picture . Tick **run with highest priviliges** and select Configure for **Windows 10** from *dropdown*
+2. In Create task enter the details as given below in the picture . Tick **run with highest priviliges** and select Configure for **Windows 10** from *dropdown*
 
 ![image](https://user-images.githubusercontent.com/48662097/111858110-5fab7200-895c-11eb-96b7-fe03ec54ff7d.png)
 
-3) Go to **Triggers** tab from the same create task menu and click on New..
+3. Go to **Triggers** tab from the same create task menu and click on New..
 
 ![image](https://user-images.githubusercontent.com/48662097/111857534-2e30a780-8958-11eb-91b1-6caf0b84d530.png)
 
-4) Enter your required time settings and click OK . 
+4. Enter your required time settings and click OK . 
 
 ![image](https://user-images.githubusercontent.com/48662097/111857611-b44cee00-8958-11eb-89d3-23ec2f0b78ac.png)
 
-5) Go to **Actions** tab fom the same create task menu and click on New..
+5. Go to **Actions** tab fom the same create task menu and click on New..
 
 ![image](https://user-images.githubusercontent.com/48662097/111857656-f6762f80-8958-11eb-924e-ca21d53d2130.png)
 
@@ -111,11 +110,11 @@ You will be able to see something like this.
 
 ![image](https://user-images.githubusercontent.com/48662097/111857712-6684b580-8959-11eb-85b4-b34fc21771a2.png)
 
-7. This requires some steps
+7. We need to perform some steps in above window
      - In **Program/Script** , enter the path to your directory where python is installed
      - To know where python is installed
      - ![image](https://user-images.githubusercontent.com/48662097/111857884-9e402d00-895a-11eb-828f-79396ff605dc.png)
-     - Replace the \\ with \ and enter the address without quotes
+     - Replace the \\\ with \ and enter the address without quotes
      - In **Add arguments** , enter `fast_meet_auto.py`
      - In **Start In** , enter the complete address where the file `fast_meet_auto.py` is present. Eg:- *C:\Users\MJCET\Desktop\MeetingBS4\FastMeet\*
      - Click **OK**
@@ -128,7 +127,7 @@ You will be able to see something like this.
 
 ![image](https://user-images.githubusercontent.com/48662097/111858127-810c5e00-895c-11eb-803c-636c71ee9da9.png)
 
-10. Voila ! You just automated your connection to the meeting !! :) 
+10. Voila ! You just automated your connection to the meeting !! 🥳 
 
 
 
