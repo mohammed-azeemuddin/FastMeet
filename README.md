@@ -59,7 +59,7 @@ You will see something similar to this picture
 
 ### Enter your details
 
-Navigate to the directory FastMeet/dir1 and open `user_details.py`
+Navigate to the directory *FastMeet/dir1* and open `user_details.py`
 
 **Enter the required details**
 
