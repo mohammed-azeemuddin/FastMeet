@@ -93,15 +93,42 @@ You will be able to see something like this.
 
 2) In Create task enter the details as given below in the picture . Tick **run with highest priviliges** and select Configure for **Windows 10** from *dropdown*
 
-![image](https://user-images.githubusercontent.com/48662097/111857457-87e4a200-8957-11eb-8df6-5dcfc2cf7599.png)
+![image](https://user-images.githubusercontent.com/48662097/111858110-5fab7200-895c-11eb-96b7-fe03ec54ff7d.png)
 
-3) Go to triggers tab from the same create task menu and click on New..
+3) Go to **Triggers** tab from the same create task menu and click on New..
 
 ![image](https://user-images.githubusercontent.com/48662097/111857534-2e30a780-8958-11eb-91b1-6caf0b84d530.png)
 
 4) Enter your required time settings and click OK . 
 
 ![image](https://user-images.githubusercontent.com/48662097/111857611-b44cee00-8958-11eb-89d3-23ec2f0b78ac.png)
+
+5) Go to **Actions** tab fom the same create task menu and click on New..
+
+![image](https://user-images.githubusercontent.com/48662097/111857656-f6762f80-8958-11eb-924e-ca21d53d2130.png)
+
+6. We need to enter some things here..
+
+![image](https://user-images.githubusercontent.com/48662097/111857712-6684b580-8959-11eb-85b4-b34fc21771a2.png)
+
+7. This requires some steps
+     - In **Program/Script** , enter the path to your directory where python is installed
+     - To know where python is installed
+     - ![image](https://user-images.githubusercontent.com/48662097/111857884-9e402d00-895a-11eb-828f-79396ff605dc.png)
+     - Replace the \\ with \ and enter the address without quotes
+     - In **Add arguments** , enter `fast_meet_auto.py`
+     - In **Start In** , enter the complete address where the file `fast_meet_auto.py` is present. Eg:- *C:\Users\MJCET\Desktop\MeetingBS4\FastMeet\*
+     - Click **OK**
+ 
+8. Go to **Conditions** tab and uncheck *Start the task only if computer is on AC power*
+
+![image](https://user-images.githubusercontent.com/48662097/111858014-903edc00-895b-11eb-8fb7-f4438069b08e.png)
+
+9. Clik on OK and check if your task is present in the library
+
+![image](https://user-images.githubusercontent.com/48662097/111858127-810c5e00-895c-11eb-803c-636c71ee9da9.png)
+
+10. Voila ! You just automated your connection to the meeting !! :) 
 
 
 
