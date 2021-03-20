@@ -1,5 +1,5 @@
 FastMeet
-This script is used for connecting to my meeting on time and entering the details of the meeting such as MeetingID,password,username and other credentials automatically.
+This script is used for connecting to meeting on time and entering the details of the meeting such as MeetingID,password,username and other credentials automatically.
 
 This script also helps one to automatically connect to a meeting without them needing to remember about it once scheduled. (NO REMINDERS NEEDED) 🤠✌️
 
