@@ -57,7 +57,7 @@ Navigate to the directory FastMeet/dir1 and open `user_details.py`
 
 **Enter the required details**
 
-`nickname = 'your_nickname' *(for the chatbot to address you)*`
+`nickname = 'your_nickname' *(for the chatbot to address you)*
 
 myurl = "https://abc.com" *(link to webex site)*
 
@@ -67,6 +67,6 @@ user_password = 'abc1234' *(webex meeting password)*
 
 my_full_name = "your name" *(your name in the meeting)*
 
-email_id = "yourname@abc.com" *(your email id in the meeting)*
+email_id = "yourname@abc.com" *(your email id in the meeting)*`
 
 
