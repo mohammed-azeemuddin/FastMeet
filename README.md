@@ -1,4 +1,7 @@
-FastMeet
+# FastMeet
+
+## Introduction:;
+
 This script is used for connecting to meeting on time and entering the details of the meeting such as MeetingID,password,username and other credentials automatically.
 
 This script also helps one to automatically connect to a meeting without them needing to remember about it once scheduled. (NO REMINDERS NEEDED) 🤠✌️
@@ -69,7 +72,7 @@ email_id *(your email id in the meeting)*
 
 ![p1](https://user-images.githubusercontent.com/48662097/111855952-87470e00-894d-11eb-9124-7f64df0ec2cc.jpg)
 
-## Testing your program 
+## Testing the scripts 
 
 We're halfway there!
 
