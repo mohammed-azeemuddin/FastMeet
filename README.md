@@ -55,9 +55,9 @@ You will see something similar to this picture
 
 Navigate to the directory FastMeet/dir1 and open `user_details.py`
 
-Enter the required details
+**Enter the required details**
 
-nickname = 'your_nickname' *(for the chatbot to address you)*
+`nickname = 'your_nickname' *(for the chatbot to address you)*`
 
 myurl = "https://abc.com" *(link to webex site)*
 
