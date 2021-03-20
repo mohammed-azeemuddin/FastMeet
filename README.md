@@ -78,6 +78,33 @@ We're halfway there!
 
 Run `fast_meet_auto.py` and `fast_meet_manual.py` to test the scripts. 
 
+## Scheduling the script using Windows task scheduler
+
+Go to Search -> Task Scheduler
+
+You will be able to see something like this.
+
+![image](https://user-images.githubusercontent.com/48662097/111857361-f6753000-8956-11eb-9ba7-249256118058.png)
+
+
+1) Go to the Actions (on the right) and click Create Task
+
+![image](https://user-images.githubusercontent.com/48662097/111857421-57046d00-8957-11eb-97f4-ec167c7ef796.png)
+
+2) In Create task enter the details as given below in the picture . Tick **run with highest priviliges** and select Configure for **Windows 10** from *dropdown*
+
+![image](https://user-images.githubusercontent.com/48662097/111857457-87e4a200-8957-11eb-8df6-5dcfc2cf7599.png)
+
+3) Go to triggers tab from the same create task menu and click on New..
+
+![image](https://user-images.githubusercontent.com/48662097/111857534-2e30a780-8958-11eb-91b1-6caf0b84d530.png)
+
+4) Enter your required time settings and click OK . 
+
+![image](https://user-images.githubusercontent.com/48662097/111857611-b44cee00-8958-11eb-89d3-23ec2f0b78ac.png)
+
+
+
 
 
 
