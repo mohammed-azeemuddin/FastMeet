@@ -69,6 +69,11 @@ email_id *(your email id in the meeting)*
 
 ![p1](https://user-images.githubusercontent.com/48662097/111855952-87470e00-894d-11eb-9124-7f64df0ec2cc.jpg)
 
+## Testing your program 
+
+Voila! We're done!
+Run `fast_meet_auto.py` and `fast_meet_manual.py` to test the scripts. 
+
 
 
 
