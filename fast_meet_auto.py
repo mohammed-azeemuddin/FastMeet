@@ -114,7 +114,7 @@ def connect_to_meet():
             
 
 
-x='Good Morning Azeem ! It\'s time for the meeting. Let\'s connect. Connecting to the meeting .. please wait...'
+x='Good Morning ! It\'s time for the meeting. Let\'s connect. Connecting to the meeting .. please wait...'
 engine.say(x)
 print(x)
 engine.runAndWait()
