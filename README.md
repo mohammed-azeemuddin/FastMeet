@@ -1,6 +1,6 @@
 # FastMeet
 
-## Introduction:;
+## Introduction
 
 This script is used for connecting to meeting on time and entering the details of the meeting such as MeetingID,password,username and other credentials automatically.
 
