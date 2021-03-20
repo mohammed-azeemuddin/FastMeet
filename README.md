@@ -69,4 +69,8 @@ my_full_name *(your name in the meeting)*
 
 email_id *(your email id in the meeting)*
 
+![image](https://user-images.githubusercontent.com/48662097/111855911-3d5e2800-894d-11eb-99e3-4ae2ef983967.png)
+
+
+
 
